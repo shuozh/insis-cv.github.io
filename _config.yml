@@ -1,0 +1,36 @@
+title: "Zhang Shuo | BJTU"
+description: "深度学习与计算机视觉 - 北京交通大学"
+url: ""
+baseurl: "/Insis-CV"
+
+markdown: kramdown
+
+exclude:
+  - base-info.md
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
+collections:
+  papers:
+    output: true
+    permalink: /papers/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "papers"
+    values:
+      layout: "paper"
+
+author:
+  name: "张硕"
+  name_en: "Shuo Zhang"
+  title: "博士、副教授、博士生导师"
+  affiliation: "北京交通大学 计算机与信息技术学院"
+  email: "zhangshuo@bjtu.edu.cn"
+  office: "九教西203，邮编：100044"
+  team: "网络科学与智能系统研究所 (INSIS)"
+  team_url: "http://insis.bjtu.edu.cn"
+  scholar: "https://scholar.google.com/citations?user=PLACEHOLDER"

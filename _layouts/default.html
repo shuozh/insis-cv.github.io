@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="{{ '/' | relative_url }}" class="site-logo">{{ site.author.name_en }} <span class="logo-divider">|</span> <span class="logo-sub">{{ site.author.affiliation }}</span></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="site-nav" id="site-nav">
+        <a href="{{ '/' | relative_url }}">首页</a>
+        <a href="{{ '/' | relative_url }}#research">研究方向</a>
+        <a href="{{ '/' | relative_url }}#publications">论文成果</a>
+        <a href="mailto:{{ site.author.email }}">联系我</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; {{ 'now' | date: '%Y' }} {{ site.author.name }} - {{ site.author.affiliation }}</p>
+      <p>Powered by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> & <a href="https://jekyllrb.com/" target="_blank">Jekyll</a></p>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top" id="backToTop" title="返回顶部">&uarr;</a>
+
+  <script>
+    // Back to top button
+    var btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', function() {
+      btn.classList.toggle('visible', window.scrollY > 400);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<section class="paper-detail">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="{{ '/' | relative_url }}">首页</a>
+      <span class="breadcrumb-sep">/</span>
+      <a href="{{ '/' | relative_url }}#publications">论文成果</a>
+      <span class="breadcrumb-sep">/</span>
+      <span>{{ page.venue_short }} {{ page.year }}</span>
+    </div>
+
+    <div class="paper-detail-card">
+      <div class="paper-detail-meta">
+        {% if page.ccf and page.ccf != "" %}
+        <span class="badge badge-{{ page.ccf }}">CCF {{ page.ccf }}</span>
+        {% endif %}
+        <span class="badge badge-venue">{{ page.venue_short }}</span>
+        <span class="paper-year">{{ page.year }}</span>
+      </div>
+
+      <h1 class="paper-detail-title">{{ page.title }}</h1>
+
+      <p class="paper-detail-authors">{{ page.authors }}</p>
+
+      <p style="font-size: 14px; color: var(--color-text-secondary); margin-bottom: 20px;">
+        {{ page.venue }}
+      </p>
+
+      <div class="paper-detail-links">
+        {% if page.paper_link and page.paper_link != "" %}
+        <a href="{{ page.paper_link }}" target="_blank" class="btn btn-primary">Paper</a>
+        {% endif %}
+        {% if page.code_link and page.code_link != "" %}
+        <a href="{{ page.code_link }}" target="_blank" class="btn btn-outline">Code</a>
+        {% endif %}
+      </div>
+
+      <div class="paper-detail-body">
+        {{ content }}
+      </div>
+
+      <a href="{{ '/' | relative_url }}#publications" class="back-link">&larr; 返回论文列表</a>
+    </div>
+  </div>
+</section>

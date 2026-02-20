@@ -1,0 +1,165 @@
+---
+layout: default
+title: "张硕 - 北京交通大学"
+---
+
+<!-- ===== Hero Section ===== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-info">
+        <h1 class="hero-name">张硕 <span class="hero-name-en">Shuo Zhang</span></h1>
+        <p class="hero-title">{{ site.author.title }} | {{ site.author.affiliation }}</p>
+        <p class="hero-desc">
+          主要研究方向为<strong>深度学习算法及其在计算机视觉中的应用</strong>，包括像素级视觉任务（图像超分辨、图像修复、图像增强等）和三维重建任务（多目视觉、深度估计、视角仿真、神经网络辐射场等）。相关研究已在 TIP, TVCG, TCSVT, TMM, TCI, PR, CVIU, SPL 等国际期刊，CVPR, ICCV, AAAI, ACM MM, IJCAI, ICASSP, ICIP 等国际会议发表论文30余篇。
+        </p>
+        <div class="hero-links">
+          <a href="mailto:{{ site.author.email }}" class="hero-link">Email</a>
+          <a href="{{ site.author.scholar }}" target="_blank" class="hero-link">Google Scholar</a>
+          <a href="{{ site.author.team_url }}" target="_blank" class="hero-link">{{ site.author.team }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== About Section ===== -->
+<section class="section" id="about">
+  <div class="container">
+    <h2 class="section-title">个人简介</h2>
+    <p class="section-subtitle">教育背景、工作经历与招生信息</p>
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>教育背景</h3>
+        <ul>
+          <li>2012-2018，北京航空航天大学，计算机科学与技术，博士<br>导师：熊璋教授、盛浩教授</li>
+          <li>2015-2016，MIT CSAIL，联合培养学生<br>导师：Berthold K.P. Horn</li>
+        </ul>
+      </div>
+      <div class="about-card">
+        <h3>工作经历</h3>
+        <ul>
+          <li>2021年至今，北京交通大学计算机学院，副教授</li>
+          <li>2018-2021，北京交通大学计算机学院，讲师</li>
+        </ul>
+      </div>
+      <div class="about-card">
+        <h3>招生方向</h3>
+        <p>招收计算机科学与技术、人工智能、软件工程、大数据技术与工程、新一代电子信息技术、低空技术与工程等专业的硕士和博士研究生。欢迎感兴趣的同学联系！</p>
+      </div>
+      <div class="about-card">
+        <h3>教学课程</h3>
+        <ul>
+          <li>本科课程：《离散数学》</li>
+          <li>研究生课程：《机器学习》《机器视觉基础》</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Research Directions ===== -->
+<section class="section" id="research">
+  <div class="container">
+    <h2 class="section-title">研究方向</h2>
+    <p class="section-subtitle">深度学习算法及其在计算机视觉中的应用</p>
+    <div class="research-grid">
+      <div class="research-card">
+        <h3>像素级视觉任务</h3>
+        <p>研究图像/光场的像素级理解与处理，包括超分辨率重建、遮挡去除、反射分离、图像增强、去噪、去雨滴等低级视觉任务，旨在恢复和提升图像的视觉质量。</p>
+        <div style="margin-top: 12px;">
+          <span class="research-tag">图像超分辨</span>
+          <span class="research-tag">图像修复</span>
+          <span class="research-tag">图像增强</span>
+          <span class="research-tag">去噪</span>
+          <span class="research-tag">遮挡去除</span>
+          <span class="research-tag">反射分离</span>
+        </div>
+      </div>
+      <div class="research-card">
+        <h3>三维重建任务</h3>
+        <p>研究基于光场图像的三维场景理解与重建，包括深度估计、立体匹配、场景恢复、显著性检测、语义分割等，结合多视角信息实现精准的场景几何感知。</p>
+        <div style="margin-top: 12px;">
+          <span class="research-tag">深度估计</span>
+          <span class="research-tag">场景恢复</span>
+          <span class="research-tag">立体匹配</span>
+          <span class="research-tag">语义分割</span>
+          <span class="research-tag">显著性检测</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Publications ===== -->
+<section class="section" id="publications">
+  <div class="container">
+    <h2 class="section-title">论文成果</h2>
+    <p class="section-subtitle">发表于国际顶级期刊与会议的代表性论文</p>
+
+    {% assign pixel_papers = site.papers | where: "category", "pixel_vision" | sort: "year" | reverse %}
+    {% assign recon_papers = site.papers | where: "category", "reconstruction" | sort: "year" | reverse %}
+    {% assign collab_papers = site.papers | where: "category", "collaboration" | sort: "year" | reverse %}
+
+    {% if pixel_papers.size > 0 %}
+    <h3 class="paper-category-title">像素级视觉任务</h3>
+    <div class="paper-list">
+      {% for paper in pixel_papers %}
+      <a href="{{ paper.url | relative_url }}" class="paper-card">
+        <div class="paper-meta">
+          {% if paper.ccf and paper.ccf != "" %}
+          <span class="badge badge-{{ paper.ccf }}">CCF {{ paper.ccf }}</span>
+          {% endif %}
+          <span class="badge badge-venue">{{ paper.venue_short }}</span>
+          <span class="paper-year">{{ paper.year }}</span>
+        </div>
+        <h4 class="paper-title">{{ paper.title }}</h4>
+        <p class="paper-authors">{{ paper.authors }}</p>
+        <p style="font-size:13px; color: var(--color-text-secondary);">{{ paper.venue }}</p>
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if recon_papers.size > 0 %}
+    <h3 class="paper-category-title">三维重建任务</h3>
+    <div class="paper-list">
+      {% for paper in recon_papers %}
+      <a href="{{ paper.url | relative_url }}" class="paper-card">
+        <div class="paper-meta">
+          {% if paper.ccf and paper.ccf != "" %}
+          <span class="badge badge-{{ paper.ccf }}">CCF {{ paper.ccf }}</span>
+          {% endif %}
+          <span class="badge badge-venue">{{ paper.venue_short }}</span>
+          <span class="paper-year">{{ paper.year }}</span>
+        </div>
+        <h4 class="paper-title">{{ paper.title }}</h4>
+        <p class="paper-authors">{{ paper.authors }}</p>
+        <p style="font-size:13px; color: var(--color-text-secondary);">{{ paper.venue }}</p>
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if collab_papers.size > 0 %}
+    <h3 class="paper-category-title">合作研究</h3>
+    <div class="paper-list">
+      {% for paper in collab_papers %}
+      <a href="{{ paper.url | relative_url }}" class="paper-card">
+        <div class="paper-meta">
+          {% if paper.ccf and paper.ccf != "" %}
+          <span class="badge badge-{{ paper.ccf }}">CCF {{ paper.ccf }}</span>
+          {% endif %}
+          <span class="badge badge-venue">{{ paper.venue_short }}</span>
+          <span class="paper-year">{{ paper.year }}</span>
+        </div>
+        <h4 class="paper-title">{{ paper.title }}</h4>
+        <p class="paper-authors">{{ paper.authors }}</p>
+        <p style="font-size:13px; color: var(--color-text-secondary);">{{ paper.venue }}</p>
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+  </div>
+</section>
