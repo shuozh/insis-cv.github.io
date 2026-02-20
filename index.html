@@ -23,68 +23,94 @@ title: "张硕 - 北京交通大学"
   </div>
 </section>
 
-<!-- ===== About Section ===== -->
-<section class="section" id="about">
-  <div class="container">
-    <h2 class="section-title">个人简介</h2>
-    <p class="section-subtitle">教育背景、工作经历与招生信息</p>
-    <div class="about-grid">
-      <div class="about-card">
-        <h3>教育背景</h3>
-        <ul>
-          <li>2012-2018，北京航空航天大学，计算机科学与技术，博士<br>导师：熊璋教授、盛浩教授</li>
-          <li>2015-2016，MIT CSAIL，联合培养学生<br>导师：Berthold K.P. Horn</li>
-        </ul>
-      </div>
-      <div class="about-card">
-        <h3>工作经历</h3>
-        <ul>
-          <li>2021年至今，北京交通大学计算机学院，副教授</li>
-          <li>2018-2021，北京交通大学计算机学院，讲师</li>
-        </ul>
-      </div>
-      <div class="about-card">
-        <h3>招生方向</h3>
-        <p>招收计算机科学与技术、人工智能、软件工程、大数据技术与工程、新一代电子信息技术、低空技术与工程等专业的硕士和博士研究生。欢迎感兴趣的同学联系！</p>
-      </div>
-      <div class="about-card">
-        <h3>教学课程</h3>
-        <ul>
-          <li>本科课程：《离散数学》</li>
-          <li>研究生课程：《机器学习》《机器视觉基础》</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ===== Research Directions ===== -->
 <section class="section" id="research">
   <div class="container">
     <h2 class="section-title">研究方向</h2>
     <p class="section-subtitle">深度学习算法及其在计算机视觉中的应用</p>
-    <div class="research-grid">
-      <div class="research-card">
-        <h3>像素级视觉任务</h3>
-        <p>研究图像/光场的像素级理解与处理，包括超分辨率重建、遮挡去除、反射分离、图像增强、去噪、去雨滴等低级视觉任务，旨在恢复和提升图像的视觉质量。</p>
-        <div style="margin-top: 12px;">
-          <span class="research-tag">图像超分辨</span>
-          <span class="research-tag">图像修复</span>
-          <span class="research-tag">图像增强</span>
-          <span class="research-tag">去噪</span>
-          <span class="research-tag">遮挡去除</span>
-          <span class="research-tag">反射分离</span>
+    
+    <!-- 像素级视觉任务 -->
+    <h3 class="research-category-title">像素级视觉任务</h3>
+    <p class="research-category-desc">研究图像/光场的像素级理解与处理，旨在恢复和提升图像的视觉质量。</p>
+    <div class="research-task-grid">
+      <div class="research-task-card">
+        <div class="task-gif">
+          <img src="https://insis-cv.github.io/assets/images/prv/image59.gif" alt="光场图像超分辨" loading="lazy">
+        </div>
+        <div class="task-info">
+          <h4>光场图像超分辨</h4>
+          <p>利用多张不同视角的低分辨率图像，通过深度学习算法生成高分辨率图像，突破硬件限制实现图像质量提升。</p>
         </div>
       </div>
-      <div class="research-card">
-        <h3>三维重建任务</h3>
-        <p>研究基于光场图像的三维场景理解与重建，包括深度估计、立体匹配、场景恢复、显著性检测、语义分割等，结合多视角信息实现精准的场景几何感知。</p>
-        <div style="margin-top: 12px;">
-          <span class="research-tag">深度估计</span>
-          <span class="research-tag">场景恢复</span>
-          <span class="research-tag">立体匹配</span>
-          <span class="research-tag">语义分割</span>
-          <span class="research-tag">显著性检测</span>
+      <div class="research-task-card">
+        <div class="task-gif">
+          <img src="https://insis-cv.github.io/assets/images/prv/occ_removal.gif" alt="光场去遮挡" loading="lazy">
+        </div>
+        <div class="task-info">
+          <h4>光场去遮挡</h4>
+          <p>利用多视角信息分析遮挡物与背景的空间关系，智能去除场景中的前景遮挡物，恢复被遮挡的背景内容。</p>
+        </div>
+      </div>
+      <div class="research-task-card">
+        <div class="task-gif">
+          <img src="https://insis-cv.github.io/assets/images/prv/reflection.gif" alt="反射分离" loading="lazy">
+        </div>
+        <div class="task-info">
+          <h4>反射分离</h4>
+          <p>针对玻璃等透明介质产生的反射干扰，利用光场图像的多视角一致性约束，分离反射层与传输层图像。</p>
+        </div>
+      </div>
+      <div class="research-task-card">
+        <div class="task-gif">
+          <img src="https://insis-cv.github.io/assets/images/prv/blur.gif" alt="模糊去除" loading="lazy">
+        </div>
+        <div class="task-info">
+          <h4>模糊去除</h4>
+          <p>针对运动模糊、失焦模糊等图像退化问题，设计深度神经网络实现图像清晰度恢复。</p>
+        </div>
+      </div>
+      <div class="research-task-card">
+        <div class="task-gif">
+          <img src="https://insis-cv.github.io/assets/images/prv/rain2.gif" alt="光场去噪/去雨" loading="lazy">
+        </div>
+        <div class="task-info">
+          <h4>光场去噪 / 去雨</h4>
+          <p>在低光照、恶劣天气等场景下，利用多视角信息增强与噪声建模，提升光场图像的视觉质量。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 三维重建任务 -->
+    <h3 class="research-category-title">三维重建任务</h3>
+    <p class="research-category-desc">研究基于光场图像的三维场景理解与重建，结合多视角信息实现精准的场景几何感知。</p>
+    <div class="research-task-grid">
+      <div class="research-task-card">
+        <div class="task-gif">
+          <img src="https://insis-cv.github.io/assets/images/prv/depth.gif" alt="光场深度估计" loading="lazy">
+        </div>
+        <div class="task-info">
+          <h4>光场深度估计</h4>
+          <p>利用多张不同视角的图像，通过极面图像分析与深度学习算法，精确估计场景的深度分布信息。</p>
+        </div>
+      </div>
+      <div class="research-task-card">
+        <div class="task-gif">
+          <img src="https://insis-cv.github.io/assets/images/prv/image233.gif" alt="视角仿真" loading="lazy">
+        </div>
+        <div class="task-info">
+          <h4>视角仿真 / 新视角合成</h4>
+          <p>基于稀疏视角输入重建三维场景模型，利用神经辐射场等技术合成任意新视角的逼真图像。</p>
+        </div>
+      </div>
+      <div class="research-task-card">
+        <div class="task-info" style="flex: 1;">
+          <h4>显著性检测与语义分割</h4>
+          <p>结合光场图像的深度信息与外观特征，实现场景中显著目标检测与像素级语义分割，为场景理解提供支持。</p>
+          <div style="margin-top: 12px;">
+            <span class="research-tag">显著性检测</span>
+            <span class="research-tag">语义分割</span>
+            <span class="research-tag">场景理解</span>
+          </div>
         </div>
       </div>
     </div>
