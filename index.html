@@ -1,17 +1,16 @@
 ---
 layout: default
-title: "多视角图像智能感知 - 北京交通大学"
+title: "Multi-View Image Intelligent Perception - Beijing Jiaotong University"
 ---
 
-<!-- ===== Hero Section ===== -->
 <section class="hero">
   <div class="container">
     <div class="hero-content">
       <div class="hero-info">
-        <h1 class="hero-name">张硕 <span class="hero-name-en">Shuo Zhang</span></h1>
+        <h1 class="hero-name">Shuo Zhang <span class="hero-name-en">Shuo Zhang</span></h1>
         <p class="hero-title">{{ site.author.title }} | {{ site.author.affiliation }}</p>
         <p class="hero-desc">
-          主要研究方向为<strong>深度学习算法及其在计算机视觉中的应用</strong>，包括像素级视觉任务（图像超分辨、图像修复、图像增强等）和三维重建任务（多目视觉、深度估计、视角仿真、神经网络辐射场等）。相关研究已在 TIP, TVCG, TCSVT, TMM, TCI, PR, CVIU, SPL 等国际期刊，CVPR, ICCV, AAAI, ACM MM, IJCAI, ICASSP, ICIP 等国际会议发表论文30余篇。
+          My research mainly focuses on <strong>Deep Learning algorithms and their applications in Computer Vision</strong>, including pixel-level vision tasks (image super-resolution, restoration, enhancement, etc.) and 3D reconstruction tasks (multi-view vision, depth estimation, view synthesis, Neural Radiance Fields, etc.). I have published over 30 papers in international journals such as TIP, TVCG, TCSVT, TMM, TCI, PR, CVIU, SPL, and conferences including CVPR, ICCV, AAAI, ACM MM, IJCAI, ICASSP, and ICIP.
         </p>
         <div class="hero-links">
           <a href="mailto:{{ site.author.email }}" class="hero-link">Email</a>
@@ -23,102 +22,99 @@ title: "多视角图像智能感知 - 北京交通大学"
   </div>
 </section>
 
-<!-- ===== Research Directions ===== -->
 <section class="section" id="research">
   <div class="container">
-    <h2 class="section-title">研究方向</h2>
-    <p class="section-subtitle">深度学习算法及其在计算机视觉中的应用</p>
+    <h2 class="section-title">Research Interests</h2>
+    <p class="section-subtitle">Deep Learning Algorithms and Computer Vision Applications</p>
     
-    <!-- 像素级视觉任务 -->
-    <h3 class="research-category-title">像素级视觉任务</h3>
-    <p class="research-category-desc">研究图像/多视角的像素级理解与处理，旨在恢复和提升图像的视觉质量。</p>
+    <h3 class="research-category-title">Pixel-level Vision Tasks</h3>
+    <p class="research-category-desc">Researching pixel-level understanding and processing of images/multi-views to restore and enhance visual quality.</p>
     <div class="research-task-grid">
       <div class="research-task-card">
         <div class="task-gif">
-          <img src="https://insis-cv.github.io/assets/images/prv/image59.gif" alt="光场图像超分辨" loading="lazy">
+          <img src="https://insis-cv.github.io/assets/images/prv/image59.gif" alt="Light Field Image Super-Resolution" loading="lazy">
         </div>
         <div class="task-info">
-          <h4>图像超分辨</h4>
-          <p>利用多张不同视角的低分辨率图像，通过深度学习算法生成高分辨率图像，突破硬件限制实现图像质量提升。</p>
+          <h4>Image Super-Resolution</h4>
+          <p>Generating high-resolution images from multiple low-resolution views using deep learning algorithms to surpass hardware limitations.</p>
         </div>
       </div>
       <div class="research-task-card">
         <div class="task-gif">
-          <img src="https://insis-cv.github.io/assets/images/prv/occ_removal.gif" alt="光场去遮挡" loading="lazy">
+          <img src="https://insis-cv.github.io/assets/images/prv/occ_removal.gif" alt="Light Field Occlusion Removal" loading="lazy">
         </div>
         <div class="task-info">
-          <h4>遮挡去除</h4>
-          <p>利用多视角信息分析遮挡物与背景的空间关系，智能去除场景中的前景遮挡物，恢复被遮挡的背景内容。</p>
+          <h4>Occlusion Removal</h4>
+          <p>Analyzing the spatial relationship between occluders and background using multi-view information to intelligently remove foreground occlusions.</p>
         </div>
       </div>
       <div class="research-task-card">
         <div class="task-gif">
-          <img src="https://insis-cv.github.io/assets/images/prv/reflection.gif" alt="反射分离" loading="lazy">
+          <img src="https://insis-cv.github.io/assets/images/prv/reflection.gif" alt="Reflection Separation" loading="lazy">
         </div>
         <div class="task-info">
-          <h4>反射分离</h4>
-          <p>针对玻璃等透明介质产生的反射干扰，利用图像的多视角一致性约束，分离反射层与传输层图像。</p>
+          <h4>Reflection Separation</h4>
+          <p>Separating reflection and transmission layers by leveraging multi-view consistency constraints for images affected by glass reflections.</p>
         </div>
       </div>
       <div class="research-task-card">
         <div class="task-gif">
-          <img src="https://insis-cv.github.io/assets/images/prv/blur.gif" alt="模糊去除" loading="lazy">
+          <img src="https://insis-cv.github.io/assets/images/prv/blur.gif" alt="Deblurring" loading="lazy">
         </div>
         <div class="task-info">
-          <h4>模糊去除</h4>
-          <p>针对运动模糊、失焦模糊等图像退化问题，设计深度神经网络实现图像清晰度恢复。</p>
+          <h4>Image Deblurring</h4>
+          <p>Restoring image clarity from motion blur or defocus blur through the design of specialized deep neural networks.</p>
         </div>
       </div>
       <div class="research-task-card">
         <div class="task-gif">
-          <img src="https://insis-cv.github.io/assets/images/prv/rain2.gif" alt="光场去噪/去雨" loading="lazy">
+          <img src="https://insis-cv.github.io/assets/images/prv/rain2.gif" alt="Denoising/Deraining" loading="lazy">
         </div>
         <div class="task-info">
-          <h4>去噪 / 去雨</h4>
-          <p>在噪声、恶劣天气等场景下，利用多视角信息增强与噪声建模，提升图像的视觉质量。</p>
+          <h4>Denoising / Deraining</h4>
+          <p>Enhancing visual quality in noisy or adverse weather conditions using multi-view information fusion and noise modeling.</p>
         </div>
       </div>
       <div class="research-task-card">
         <div class="task-gif">
-          <img src="https://insis-cv.github.io/assets/images/prv/rain2.gif" alt="光场低光照增强" loading="lazy">
+          <img src="https://insis-cv.github.io/assets/images/prv/rain2.gif" alt="Low-light Enhancement" loading="lazy">
         </div>
         <div class="task-info">
-          <h4>低光照增强</h4>
-          <p>在低光照场景下，利用多视角补充场景细节信息，在保证视角一致性下提升图像的亮度及视觉质量。</p>
+          <h4>Low-light Enhancement</h4>
+          <p>Improving brightness and visual quality in low-light scenes while maintaining view consistency by utilizing complementary scene details.</p>
         </div>
       </div>
     </div>
 
-    <!-- 三维重建任务 -->
-    <h3 class="research-category-title">三维重建任务</h3>
-    <p class="research-category-desc">研究基于多视角图像的三维场景理解与重建，结合多视角信息实现精准的场景几何感知。</p>
+    <h3 class="research-category-title">3D Reconstruction Tasks</h3>
+    <p class="research-category-desc">Researching 3D scene understanding and reconstruction based on multi-view images for precise geometric perception.</p>
     <div class="research-task-grid">
       <div class="research-task-card">
         <div class="task-gif">
-          <img src="https://insis-cv.github.io/assets/images/prv/depth.gif" alt="光场深度估计" loading="lazy">
+          <img src="https://insis-cv.github.io/assets/images/prv/depth.gif" alt="Light Field Depth Estimation" loading="lazy">
         </div>
         <div class="task-info">
-          <h4>深度估计</h4>
-          <p>利用多张不同视角的图像，通过极面图像分析与深度学习算法，精确估计场景的深度分布信息。</p>
+          <h4>Depth Estimation</h4>
+          <p>Accurately estimating scene depth distribution using epipolar plane image analysis and deep learning algorithms from multi-view inputs.</p>
         </div>
       </div>
       <div class="research-task-card">
         <div class="task-gif">
-          <img src="https://insis-cv.github.io/assets/images/prv/image233.gif" alt="视角仿真" loading="lazy">
+          <img src="https://insis-cv.github.io/assets/images/prv/image233.gif" alt="View Synthesis" loading="lazy">
         </div>
         <div class="task-info">
-          <h4>视角仿真 / 新视角合成</h4>
-          <p>基于稀疏视角输入重建三维场景模型，利用神经辐射场等技术合成任意新视角的逼真图像。</p>
+          <h4>View Synthesis / Novel View Synthesis</h4>
+          <p>Reconstructing 3D scene models from sparse view inputs and synthesizing realistic novel views using techniques like NeRF.</p>
         </div>
       </div>
       <div class="research-task-card">
         <div class="task-info" style="flex: 1;">
-          <h4>显著性检测与语义分割</h4>
-          <p>结合场景的深度信息与外观特征，实现场景中显著目标检测与像素级语义分割，为场景理解提供支持。</p>
+          <h4>Salient Object Detection & Semantic Segmentation</h4>
+          <p>Detecting salient objects and performing pixel-level semantic segmentation by combining depth information with appearance features.</p>
           <div style="margin-top: 12px;">
-            <span class="research-tag">显著性检测</span>
-            <span class="research-tag">语义分割</span>
-            <span class="research-tag">场景理解</span>
+            <span class="research-tag">Salient Object Detection</span>
+            <span class="research-tag">Semantic Segmentation</span>
+            <span class="research-tag">Scene Understanding</span>
           </div>
         </div>
       </div>
@@ -126,18 +122,17 @@ title: "多视角图像智能感知 - 北京交通大学"
   </div>
 </section>
 
-<!-- ===== Publications ===== -->
 <section class="section" id="publications">
   <div class="container">
-    <h2 class="section-title">论文成果</h2>
-    <p class="section-subtitle">发表于国际顶级期刊与会议的代表性论文</p>
+    <h2 class="section-title">Publications</h2>
+    <p class="section-subtitle">Representative papers published in top-tier international journals and conferences</p>
 
     {% assign pixel_papers = site.papers | where: "category", "pixel_vision" | sort: "year" | reverse %}
     {% assign recon_papers = site.papers | where: "category", "reconstruction" | sort: "year" | reverse %}
     {% assign collab_papers = site.papers | where: "category", "collaboration" | sort: "year" | reverse %}
 
     {% if pixel_papers.size > 0 %}
-    <h3 class="paper-category-title">像素级视觉任务</h3>
+    <h3 class="paper-category-title">Pixel-level Vision Tasks</h3>
     <div class="paper-list">
       {% for paper in pixel_papers %}
       <a href="{{ paper.url | relative_url }}" class="paper-card">
@@ -157,7 +152,7 @@ title: "多视角图像智能感知 - 北京交通大学"
     {% endif %}
 
     {% if recon_papers.size > 0 %}
-    <h3 class="paper-category-title">三维重建任务</h3>
+    <h3 class="paper-category-title">3D Reconstruction Tasks</h3>
     <div class="paper-list">
       {% for paper in recon_papers %}
       <a href="{{ paper.url | relative_url }}" class="paper-card">
@@ -177,7 +172,7 @@ title: "多视角图像智能感知 - 北京交通大学"
     {% endif %}
 
     {% if collab_papers.size > 0 %}
-    <h3 class="paper-category-title">合作研究</h3>
+    <h3 class="paper-category-title">Collaborative Research</h3>
     <div class="paper-list">
       {% for paper in collab_papers %}
       <a href="{{ paper.url | relative_url }}" class="paper-card">
