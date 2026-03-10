@@ -7,10 +7,10 @@ title: "Multi-View Image Intelligent Perception - Beijing Jiaotong University"
   <div class="container">
     <div class="hero-content">
       <div class="hero-info">
-        <h1 class="hero-name">Shuo Zhang <span class="hero-name-en">Shuo Zhang</span></h1>
+        <h1 class="hero-name">多视角智能感知研究组 <span class="hero-name-en">Multi-View Intelligent Perception</span></h1>
         <p class="hero-title">{{ site.author.title }} | {{ site.author.affiliation }}</p>
         <p class="hero-desc">
-          My research mainly focuses on <strong>Deep Learning algorithms and their applications in Computer Vision</strong>, including pixel-level vision tasks (image super-resolution, restoration, enhancement, etc.) and 3D reconstruction tasks (multi-view vision, depth estimation, view synthesis, Neural Radiance Fields, etc.). I have published over 30 papers in international journals such as TIP, TVCG, TCSVT, TMM, TCI, PR, CVIU, SPL, and conferences including CVPR, ICCV, AAAI, ACM MM, IJCAI, ICASSP, and ICIP.
+          Our group primarily focuses on <strong>Multi-View Intelligent Perception</strong> in Real-World Degraded Scenarios. The core objective is to bridge the gap between "seeing clearly" (high-fidelity image restoration) and "understanding accurately" (precise 3D perception) in complex, uncontrolled environments. By leveraging Light Field (LF) imaging, Epipolar Geometry Consistency, and Multi-Plane Image (MPI) representations, our work seeks to break through the physical limitations and geometric ambiguities inherent in traditional single-view vision.
         </p>
         <div class="hero-links">
           <a href="mailto:{{ site.author.email }}" class="hero-link">Email</a>
@@ -25,10 +25,16 @@ title: "Multi-View Image Intelligent Perception - Beijing Jiaotong University"
 <section class="section" id="research">
   <div class="container">
     <h2 class="section-title">Research Interests</h2>
-    <p class="section-subtitle">Deep Learning Algorithms and Computer Vision Applications</p>
+    <p class="section-subtitle">This overarching theme is driven by two main pillars of research: </p>
     
     <h3 class="research-category-title">Pixel-level Vision Tasks</h3>
-    <p class="research-category-desc">Researching pixel-level understanding and processing of images/multi-views to restore and enhance visual quality.</p>
+    <p class="research-category-desc">This track addresses the challenge of restoring high-fidelity visual information when data is corrupted by environmental degradation (e.g., low light, rain, reflections, and sensor noise).
+
+<strong>Low-Light Enhancement & Denoising:<strong> Exploring view-consistency priors and multi-stream progressive networks to achieve scene-adaptive illumination and noise reduction.
+
+<strong>Interference Removal (Reflection & Raindrops):<strong> Innovating hierarchical multi-plane image (MPI) construction and multi-layer interaction mechanisms to achieve pixel-level decoupling of background and interference layers.
+
+<strong>Light Field Super-Resolution:<strong> Combining flexible hybrid lenses and structure-aware neural rendering to reconstruct high-resolution, high-quality light field images.</p>
     <div class="research-task-grid">
       <div class="research-task-card">
         <div class="task-gif">
@@ -87,7 +93,13 @@ title: "Multi-View Image Intelligent Perception - Beijing Jiaotong University"
     </div>
 
     <h3 class="research-category-title">3D Reconstruction Tasks</h3>
-    <p class="research-category-desc">Researching 3D scene understanding and reconstruction based on multi-view images for precise geometric perception.</p>
+    <p class="research-category-desc">This track tackles the challenges of estimating geometry and understanding semantics in the presence of severe occlusions, weak textures, and complex materials.
+
+<strong>Unsupervised & Occlusion-Robust Depth Estimation:<strong> Proposing epipolar consistent attention aggregation networks to overcome physical occlusion bottlenecks and achieve highly accurate, unsupervised light field disparity estimation.
+
+<strong>Geometry Perception for Complex Materials:<strong> Solving depth ambiguity issues for transparent and reflective surfaces through dual-layer depth estimation and decoupling strategies.
+
+<strong>Semantic Understanding & Occlusion Removal:<strong> Integrating structural priors into LF semantic segmentation and advancing flexible 3D occlusion mask learning within Neural Radiance Fields (NeRF).</p>
     <div class="research-task-grid">
       <div class="research-task-card">
         <div class="task-gif">
